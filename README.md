@@ -202,7 +202,7 @@ class MyController
     // Attaching:
     // - storage/signatures/bob.jpg as signature.jpg
     // - public/images/logo.png as logo.png
-    // - a inline string as override.css
+    // - a inline string as style.css
     // - resources/pdf/footer.html as footer.html
     // Trigger a download with the default filename "your-contract.pdf"
     public function example1(Request $request)
@@ -223,7 +223,7 @@ class MyController
             ->attach('signature.jpg', storage_path('signatures/bob.jpg'))
             ->files(function (Files $files) {
                 $files->addFile('logo.png', public_path('images/logo.png'))
-                $files->addString('override.css', '.something-important { color: red; }');
+                $files->addString('style.css', '.something-important { color: red; }');
                 $files->addStream('footer.html', fopen(resource_path('pdf/footer.html')));
             })
             ->download('your-contract.pdf');
