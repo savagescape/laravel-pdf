@@ -140,7 +140,7 @@ use Savagescape\Pdf\Files;
 // To simply attach an existing file, you can use ->attach()
 // Also note that the filename you pass along doesn't necessarily
 // have to match whats on disk
-$pdf = Pdf::from('<link rel="stylesheet" href="style.css"><h1>Hello world</h1>')
+$pdf = Pdf::fromHtml('<link rel="stylesheet" href="style.css"><h1>Hello world</h1>')
     ->attach('style.css', resource_path('path/to/my/custom.css'));
 
 // To attach a file from a stream or a string you can interact with the Files object directly
