@@ -157,7 +157,7 @@ $pdf = Pdf::fromHtml('<link rel="stylesheet" href="style.css"><img src="logo.png
 
 Now you've built your PDF you can either save it to your local disk, display it inline in the browser, trigger a download from the browser or use the stream as you wish.
 
-The Pdf object also implements `Responsable` which will default to streaming the PDF as an inline attachment with the filename `download.pdf`.
+The `Pdf` object also implements `Responsable` which will default to streaming the PDF as an inline attachment with the filename `download.pdf`.
 
 > [!CAUTION]
 > Every time you call one of these methods, the PDF will be re-rendered! The result of the last stream **is not re-used**. This can be potentially expensive depending on how complex your HTML, styling and how large your attached files are.
