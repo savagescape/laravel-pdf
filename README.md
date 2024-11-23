@@ -212,7 +212,7 @@ class MyController
         <img src="logo.png">
         <h1 clas="something-important">Hello World</h1>
         <img src="signature.jpg">
-        HTML>>>
+        HTML;
 
         return Pdf::fromHtml($html)
             ->options(function (Options $options) {
