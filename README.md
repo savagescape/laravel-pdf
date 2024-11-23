@@ -248,7 +248,7 @@ class MyController
             fn (Options $options) => $options->generateDocumentOutline()->printBackground()
         );
 
-        $pdf->save(storage_path("brochure/car-{$myModel->id}.pdf");
+        $pdf->save(storage_path("brochure/car-{$myModel->id}.pdf"));
     }
 }
 ```
