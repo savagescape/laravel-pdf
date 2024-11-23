@@ -119,8 +119,6 @@ The HTML/file/view you start from is automatically mapped to `index.html`. To at
 
 You can only add one file per-filename, trying to replace an already attached file will throw an exception.
 
-Using `attach()`, `addFile()` and `addStream()` to attach files should use less memory than `addString()`, so use `addString()` sparingly!
-
 You should reference any attached files using relative paths, eg: use `<img src="image.png">` instead of `<img src="/image.png">`
 
 Three filenames are reserved for special use by Gotenberg:
