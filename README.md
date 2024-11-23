@@ -71,7 +71,7 @@ use Savagescape\Pdf\Facades\Pdf;
 $pdf = Pdf::fromHtml('<h1>Hello world</h1>');
 
 // or from a raw file
-$pdf Pdf::fromFile(resource_path('hello-world.html'));
+$pdf = Pdf::fromFile(resource_path('hello-world.html'));
 
 // or from a Blade view
 $pdf = Pdf::fromView('hello-world', ['name' => 'Bob']);
