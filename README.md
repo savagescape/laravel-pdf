@@ -130,7 +130,7 @@ Three filenames are reserved for special use by Gotenberg:
 
 See: https://gotenberg.dev/docs/routes#header-footer-chromium
 
-> **Note:**
+> [!NOTE]
 > Attached files need to be transfered to the Gotenberg container along side your HTML. The larger the files you attach, the longer this will take.
 
 ```php
@@ -161,7 +161,7 @@ Now you've built your PDF you can either save it to your local disk, display it 
 
 The Pdf object also implements `Responsable` which will default to streaming the PDF as an inline attachment with the filename `download.pdf`.
 
-> **Caution:**
+> [!CAUTION]
 > Every time you call one of these methods, the PDF will be re-rendered! The result of the last stream **is not re-used**. This can be potentially expensive depending on how complex your HTML, styling and how large your attached files are.
 
 ```php
