@@ -1,5 +1,6 @@
 {
     "name": "savagescape/pdf",
+    "license": "MIT",
     "require": {
         "php": "^8.2",
         "illuminate/collections": "^10.0 || ^11.0",
